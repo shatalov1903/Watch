@@ -10,7 +10,7 @@ body {
   max-width: 1440px;
   width: 100%;
   background: #fff;
-  padding-bottom: 50px;
+  padding: 4px 240px 142px 133px;
 }
 
 .content {
@@ -20,8 +20,7 @@ body {
   max-width: 1440px;
   width: 100%;
   background: #f8f8f8;
-  padding: 4px 240px 211px 133px;
-  gap: 0;
+  margin-bottom: 211px;
 }
 
 .content__text {
@@ -83,7 +82,7 @@ body {
   box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
 }
 
-.img-one {
+.img-first {
   flex-shrink: 0;
   display: flex;
   max-width: 408px;
@@ -104,13 +103,18 @@ body {
   font-size: 72px;
   font-weight: 400;
   line-height: 112.5%;
-  margin-bottom: 194px;
+}
+
+.img-second {
+  flex-shrink: 0;
+  display: flex;
+  max-width: 417px;
+  padding: 129px 107px 91px 24px;
+  margin: 65px 465px 86px 558px;
 }
 
 .img-two {
-  max-width: 286px;
-  flex-shrink: 0;
-  margin-left: 24px;
+  min-width: 286px;
 }
 
 .h3one {
@@ -118,7 +122,6 @@ body {
   font-family: League Spartan;
   font-size: 32px;
   font-weight: 400;
-  margin-top: 177px;
 }
 
 .desc-two {
@@ -128,12 +131,19 @@ body {
   font-weight: 300;
   line-height: 155%;
   max-width: 532px;
-  margin-bottom: 150px;
+  margin-bottom: 85px;
+}
+
+.img-third {
+  flex-shrink: 0;
+  display: flex;
+  max-width: 500px;
+  padding: 65px 0px;
+  margin-bottom: 67px;
 }
 
 .img-three {
-  max-width: 500px;
-  flex-shrink: 0;
+  min-width: 500px;
 }
 
 .h3two {
@@ -141,7 +151,6 @@ body {
   text-align: center;
   font-size: 32px;
   font-weight: 400;
-  margin-top: 132px;
 }
 
 .desc-three {
@@ -201,4 +210,62 @@ body {
 
 h3 {
   margin-bottom: 10px;
+}
+
+.button .material-icons {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 30px;
+  }
+  .content {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .content__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content__desc {
+    padding: 50px;
+  }
+  .img-one {
+    min-width: 408px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__title {
+    font-size: 120px;
+  }
+  .img-one {
+    min-width: 290px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content__desc {
+    padding: 20px;
+  }
+  .img-second {
+    margin-top: 10px;
+  }
+  .button .btn {
+    width: 35px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .button .material-icons {
+    display: inline-block;
+    font-size: 45px;
+  }
+  .button .btn__text {
+    display: none;
+  }
 }
