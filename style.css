@@ -70,14 +70,14 @@ body {
   background: orange;
 }
 
-.price__text {
+.price {
   display: inline-block;
   color: #272727;
   text-align: center;
   font-size: 32px;
   font-weight: 300;
   line-height: 186%;
-  padding: 13px 27px 31px 28px;
+  padding: 27px 27px 34px 28px;
   background: #fff;
   box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
 }
