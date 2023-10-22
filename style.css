@@ -119,11 +119,15 @@ body {
   min-width: 286px;
 }
 
-.h3one {
-  color: #000;
-  font-family: League Spartan;
+h3 {
+  text-align: center;
   font-size: 32px;
   font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.h3one {
+  color: #000;
 }
 
 .desc-two {
@@ -150,9 +154,6 @@ body {
 
 .h3two {
   color: #161515;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 400;
 }
 
 .desc-three {
@@ -167,9 +168,6 @@ body {
 
 .h3end {
   color: #161515;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 400;
   line-height: 186%;
   text-transform: capitalize;
   margin-bottom: 58px;
@@ -208,10 +206,6 @@ body {
 
 .desc-end__a:hover {
   color: red;
-}
-
-h3 {
-  margin-bottom: 10px;
 }
 
 .button .material-icons {
