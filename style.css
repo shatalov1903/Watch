@@ -10,7 +10,7 @@ body {
   max-width: 1440px;
   width: 100%;
   background: #fff;
-  padding: 4px 240px 142px 133px;
+  padding-bottom: 142px;
 }
 
 .content {
@@ -18,9 +18,8 @@ body {
   align-items: center;
   margin-inline: auto;
   max-width: 1440px;
-  width: 100%;
   background: #f8f8f8;
-  margin-bottom: 211px;
+  margin: 4px 240px 142px 211px;
 }
 
 .content__text {
@@ -220,6 +219,12 @@ h3 {
   display: none;
 }
 
+@media screen and (max-width: 1100px) {
+  .content__title {
+    font-size: 200px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .container {
     padding: 30px;
@@ -227,7 +232,8 @@ h3 {
   .content {
     flex-direction: column-reverse;
     text-align: center;
-    margin-bottom: 100px;
+    width: 100%;
+    margin: 0 0 150px 0;
   }
   .content__title {
     margin-left: auto;
@@ -247,6 +253,9 @@ h3 {
 @media screen and (max-width: 576px) {
   .content__desc {
     padding: 20px;
+  }
+  .img-one {
+    max-width: 286px;
   }
   .img-second {
     margin-top: 10px;
